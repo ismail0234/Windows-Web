@@ -48,8 +48,8 @@
             <a href="#search" id="search"></a>
             <a href="#tabs" id="tabs-windows"></a>
             <a href="#" class="px"></a>
-            <a href="#folder" id="folder" class="border"></a>
-            <a href="#chrome-pop-up" id="chrome" class="border"></a>
+            <a href="#folder" id="folder" class="window-border"></a>
+            <a href="#chrome-pop-up" id="chrome" class="window-border"></a>
         </div>
         <div class="icons-right">
                 <a href="#up" id="up" class="small-icons"><i class="fas fa-chevron-up"></i></a>
