@@ -10,7 +10,7 @@ var botBensonWindowsWeb = {
 			clearTimeout( this.timer );
 
 		var date   = new Date();
-		var second = 60 - date.getSeconds() * 1000;
+		var second = ( 60 - date.getSeconds() ) * 1000;
 
 		this.timer = setTimeout( function(){
 
