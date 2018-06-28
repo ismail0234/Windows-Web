@@ -59,7 +59,7 @@
                     <span class="hour">23:58</span>
                     <span class="date">03/05/2018</span>
                 </div>
-                <a href="#notifications" id="notifications"><i class="far fa-bell"></i></a>
+                <a href="#notifications" id="notifications"><i class="far fa-comment-alt"></i></a>
                 <a href="#" class="clear disabled"></a>
                 <a href="#" id="return"></a>
         </div>
