@@ -107,14 +107,14 @@
                     <i class="fas fa-wifi"></i>
                     </div>
                     <div class="text-wifi">
-                        <span class="name-wifi">Wifi</span>
-                        <span class="type-wifi">Connected, securised</span>
-                        <span class="propriety">Propriety</span>
+                        <span class="name-wifi">BOT Benson Wifi</span>
+                        <span class="type-wifi">Connected, no password</span>
+                        <span class="propriety">Quality 80%</span>
                         <button>Disconnect</button>
                     </div>
                 </div>
-                <div class="networks">
-                        <div class="icons-wifi">
+                <!--<div class="networks">
+                    <div class="icons-wifi">
                             <i class="fas fa-wifi"></i>
                         </div>
                     <span class="name-wifi">Wifi</span>
@@ -126,12 +126,12 @@
                         </div>
                     <span class="name-wifi">Wifi</span>
                     <span class="type-wifi">Open</span>
-                </div>
+                </div>-->
                 <div class="options-wifi">
-                    <div class="options-wifi-text">
+                    <!--<div class="options-wifi-text">
                         <span>Options internet & security</span>
                         <span>Modify options, for a better connection</span>
-                    </div>
+                    </div>-->
                     <div class="options-bloc">
                         <div class="bloc-options">
                             <i class="fas fa-wifi"></i>
