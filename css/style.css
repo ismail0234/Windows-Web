@@ -182,13 +182,12 @@ body {
   display: table-cell;
   width: 70px !important;
   cursor: pointer;
-  padding-top: 3px;
+  padding-top: 5px;
 }
 
 .taskbar .icons-right .datetime span {
   display: block;
   text-align: center;
-  margin-top: 5px;
   font-size: 11.3px;
   color: white;
 }
