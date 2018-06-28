@@ -1007,7 +1007,7 @@ body {
 
 
 
-/*****************/
+/********   CONTEXT *********/
 
 .context-right-click-menu{
 
@@ -1035,4 +1035,12 @@ body {
 }
 .context-icon{
     width:20px;
+}
+
+/********   SPEAKER *********/
+
+#speakerRange{
+
+  width: 230px;
+
 }

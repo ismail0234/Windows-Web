@@ -2,6 +2,7 @@
 var botBensonWindowsWeb = {
 
 	timer : -1,
+	audio : 1.0,
 
 	timeStart: function( )
 	{
@@ -28,7 +29,22 @@ var botBensonWindowsWeb = {
 		$(".date").text( ( day < 10 ? '0' + day : day ) + "." + ( month < 10 ? '0' + month : month ) + "." +  year );
 
 	},
-	changContextMenu: function()
+	volumeStart: function( )
+	{
+
+		$("#speakerRange").change(function(){
+
+			var _audio = Number( $(this).val() );
+
+			botBensonWindowsWeb.audio = _audio / 100;
+			$("#sound-modal .data-value").text( _audio + '%');
+
+		});
+
+
+	},
+
+	changContextMenuStart: function()
 	{
 
 		$(document).bind("contextmenu", function (event) {

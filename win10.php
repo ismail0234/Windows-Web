@@ -89,13 +89,12 @@
     <!-- Speakers -->
     <div id="sound-modal">
         <div class="sound-text">
-            <span>Speakers</span>
+            <span>BOT Benson Volume</span>
         </div>
         <div class="sound-progress">
             <i class="fas fa-volume-up"></i>
-            <div class="bar-sound"></div>
-            <div class="bar-sound-drag"></div> 
             <span class="data-value">50%</span>   
+            <input type="range" class="custom-range" id="speakerRange"> 
         </div>
     </div>
 
@@ -356,8 +355,9 @@
   
 $(document).ready(function(){
 
-    botBensonWindowsWeb.timeStart( );
-    botBensonWindowsWeb.changContextMenu();
+    botBensonWindowsWeb.timeStart();
+    botBensonWindowsWeb.changContextMenuStart();
+    botBensonWindowsWeb.volumeStart();
 
 });
 
