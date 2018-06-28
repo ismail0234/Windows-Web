@@ -356,17 +356,8 @@
   
   $(document).ready(function(){
 
-    timeSet();  
-
-
-    $(document).bind("contextmenu", function (event) {
-        
-        event.preventDefault();      
-
-        $( ".context-right-click-menu" ).removeClass('d-none').css({ "position" : "absolute" , "top" : event.pageY + "px" , "left" : event.pageX + "px" });
-
-
-    });
+    botBensonWindowsWeb.timeStart();
+    botBensonWindowsWeb.changContextMenu();
 
   });
 
