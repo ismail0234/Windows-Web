@@ -11,6 +11,7 @@ body {
   padding: 0;
   overflow-y: hidden;
   font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
 
 .desktop {
