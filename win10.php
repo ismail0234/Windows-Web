@@ -13,12 +13,12 @@
             "left" => 0,
             "image"  => "https://image.noelshack.com/fichiers/2018/22/1/1527510180-visual-studio-code-0-10-1-icon2.png"
         ],
-        "Dosya Yöneticisi" => [
+        "File Explorer" => [
             "top"  => 190,
             "left" => 0,
             "image"  => "https://image.noelshack.com/fichiers/2018/18/6/1525513595-screenshot-5.png"
         ],
-        "Çöp Kutusu" => [
+        "Trash" => [
             "top"  => 285,
             "left" => 0,
             "image"  => "https://image.noelshack.com/fichiers/2018/18/6/1525514340-screenshot-6.png"
@@ -271,7 +271,7 @@
             <a href="">
                 <div class="context-row">
                     <div class="context-icon float-left"><i class="fas fa-sync-alt"></i></div> 
-                    <div class="context-text float-left">Yenile</div>
+                    <div class="context-text float-left">Refresh</div>
                     <div class="clearfix"></div>
                 </div>
             </a>
@@ -285,7 +285,7 @@
             <a href="">
                 <div class="context-row">
                     <div class="context-icon float-left"><i class="fas fa-folder"></i></div> 
-                    <div class="context-text float-left">Klasör Oluştur</div>
+                    <div class="context-text float-left">Create Folder</div>
                 </div>
                 <div class="clearfix"></div>
             </a>
@@ -297,7 +297,7 @@
             <a href="">
                 <div class="context-row">
                     <div class="context-icon float-left"><i class="fas fa-file-alt"></i></div> 
-                    <div class="context-text float-left">Metin Belgesi Oluştur</div>
+                    <div class="context-text float-left">Create Text Document</div>
                     <div class="clearfix"></div>
                 </div>
             </a>
@@ -311,7 +311,7 @@
             <a href="">
                 <div class="context-row">
                     <div class="context-icon float-left"><i class="fas fa-users"></i></div> 
-                    <div class="context-text float-left">Kayıt Ol</div>
+                    <div class="context-text float-left">Sign Up</div>
                     <div class="clearfix"></div>
                 </div>
             </a>
@@ -323,7 +323,7 @@
             <a href="">
                 <div class="context-row">
                     <div class="context-icon float-left"><i class="fas fa-sign-in-alt"></i></div> 
-                    <div class="context-text float-left">Giriş Yap</div>
+                    <div class="context-text float-left">Sign In</div>
                     <div class="clearfix"></div>
                 </div>
             </a>
@@ -337,7 +337,7 @@
             <a href="">
                 <div class="context-row">
                     <div class="context-icon float-left"><i class="fas fa-desktop"></i></div> 
-                    <div class="context-text float-left">Sistem Ayarları</div>
+                    <div class="context-text float-left">System Settings</div>
                     <div class="clearfix"></div>
                 </div>
             </a>
