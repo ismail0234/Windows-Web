@@ -354,12 +354,12 @@
 <script type="text/javascript" src="js/win10.js"></script>
 <script type="text/javascript">
   
-  $(document).ready(function(){
+$(document).ready(function(){
 
-    botBensonWindowsWeb.timeStart();
+    botBensonWindowsWeb.timeStart( );
     botBensonWindowsWeb.changContextMenu();
 
-  });
+});
 
 </script>
 
