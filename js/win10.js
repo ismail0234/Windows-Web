@@ -75,7 +75,7 @@ var botBensonWindowsWeb = {
 		});
 
 	},
-	dragAndDropStart: function( type )
+	dragAndDropChange: function( type )
 	{
 
 		botBensonWindowsWeb.draggable = type == true ? true : false;
