@@ -139,37 +139,77 @@ var botBensonWindowsWeb = {
 		  		if( botBensonWindowsWeb.nowDrag == null )
 		  			return;
 
-		  		var heightDesktopIcon = 100;
-		  		var widthDesktopIcon  = 70;
+		  		var coor = botBensonWindowsWeb.entityCoordinate( ui.position.top , ui.position.left );
 
-				var top  = ui.position.top - ( ui.position.top % heightDesktopIcon ); 
-				var left = ui.position.left - ( ui.position.left % widthDesktopIcon ); 
-		  		
-				if( ui.position.top % heightDesktopIcon >= heightDesktopIcon / 2  )
-					top += heightDesktopIcon;
-
-				if( ui.position.left % widthDesktopIcon >= widthDesktopIcon / 2  )
-					left += widthDesktopIcon;
-
-		  		botBensonWindowsWeb.nowDrag.css( { top : top + 'px' , left : left + 'px'} );
+		  		botBensonWindowsWeb.nowDrag.css( { top : coor.top + 'px' , left : coor.left + 'px'} );
 		  		botBensonWindowsWeb.nowDrag = null;
 
 		  	}		  	
 		});
-
+		
+		botBensonWindowsWeb.entityAutoIncreament++;
+		return false;
 	},
-	changContextMenuStart: function()
+	/**
+	 * Entity Coordinate
+	 * @param  {int} entTop  Entity Top value
+	 * @param  {int} entLeft Entity Left value
+	 * @return {object}      
+	 */
+	entityCoordinate: function( entTop , entLeft )
 	{
 
-		$(document).bind("contextmenu", function (event) {
-        
-	        event.preventDefault();      
+  		var heightDesktopIcon = botBensonWindowsWeb.entity.settings.height;
+  		var widthDesktopIcon  = botBensonWindowsWeb.entity.settings.width;
 
-	        $( ".context-right-click-menu" ).removeClass('d-none').css({ "position" : "absolute" , "top" : event.pageY + "px" , "left" : event.pageX + "px" });
+		var top  = entTop - ( entTop % heightDesktopIcon ); 
+		var left = entLeft - ( entLeft % widthDesktopIcon ); 
+  		
+		if( entTop % heightDesktopIcon >= heightDesktopIcon / 2  )
+			top += heightDesktopIcon;
 
-	    });
+		if( entLeft % widthDesktopIcon >= widthDesktopIcon / 2  )
+			left += widthDesktopIcon;
+
+		return {
+			top : top,
+			left: left,
+		};
+
+	},
+	/**
+	 * runContextEvent
+	 * @param  {string} dataType   Event Type 
+	 * @param  {Object} coordinate Event Type Coordinate ( optional )
+	 * @return {void}
+	 */
+	runContextEvent: function( dataType , coordinate = {} )
+	{
+
+		switch( dataType )
+		{
+
+			case "refresh":
+			{
+
+				window.location.reload();
+
+			},
+			case "create-folder":
+			{
+
+				botBensonWindowsWeb.createEntity( "folder" , coordinate  );
+
+			},
+			case "create-text-document":
+			{
+
+				botBensonWindowsWeb.createEntity( "text-document" , coordinate  );
+
+			},
+
+		}
 
 	}
-
 
 };
