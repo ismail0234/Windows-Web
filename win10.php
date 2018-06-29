@@ -361,6 +361,7 @@ $(document).ready(function(){
     botBensonWindowsWeb.timeStart();
     botBensonWindowsWeb.changContextMenuStart();
     botBensonWindowsWeb.volumeStart();
+    botBensonWindowsWeb.dragAndDropStart();
 
 });
 

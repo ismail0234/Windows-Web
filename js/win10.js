@@ -1,8 +1,9 @@
 
 var botBensonWindowsWeb = {
 
-	timer : -1,
-	audio : 1.0,
+	timer  : -1,
+	audio  : 1.0,
+	nowDrag: null,
 
 	timeStart: function( )
 	{
@@ -43,7 +44,39 @@ var botBensonWindowsWeb = {
 
 
 	},
+	dragAndDropStart: function()
+	{
 
+		$( ".icon-desktop" ).draggable({
+			start: function( event , ui ){
+
+				botBensonWindowsWeb.nowDrag = $(this);
+
+			},
+		  	stop: function( event, ui ) {
+
+		  		if( botBensonWindowsWeb.nowDrag == null )
+		  			return;
+
+		  		var heightDesktopIcon = 90;
+		  		var widthDesktopIcon  = 70;
+
+				var top  = ui.position.top - ( ui.position.top % heightDesktopIcon ); 
+				var left = ui.position.left - ( ui.position.left % widthDesktopIcon ); 
+		  		
+				if( ui.position.top % heightDesktopIcon >= heightDesktopIcon / 2  )
+					top += heightDesktopIcon;
+
+				if( ui.position.left % widthDesktopIcon >= widthDesktopIcon / 2  )
+					top += widthDesktopIcon;
+
+		  		botBensonWindowsWeb.nowDrag.css( { top : top + 'px' , left : left + 'px'} );
+		  		botBensonWindowsWeb.nowDrag = null;
+		  		
+		  	}		  	
+		});
+
+	},
 	changContextMenuStart: function()
 	{
 
