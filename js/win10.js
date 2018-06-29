@@ -95,7 +95,7 @@ var botBensonWindowsWeb = {
 	    $( ".context-right-click-menu .context-row" ).click(function(){
 
 	    	botBensonWindowsWeb.runContextEvent( $(this).attr('data-type') , $( ".context-right-click-menu" ).position() );
-
+	    	$( ".context-right-click-menu" ).addClass( 'd-none' );
 	    });
 
 	},
