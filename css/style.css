@@ -77,25 +77,6 @@ body {
   background-size: 26px 26px;
 }
 
-.taskbar .icons-left #tabs-windows {
-  height: 43px;
-  width: 49px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 15px 15px;
-  background-size: 23px 15px;
-}
-
-.taskbar .icons-left #tabs-windows:hover {
-  height: 43px;
-  width: 49px;
-  background-image: url("https://image.noelshack.com/fichiers/2018/18/5/1525467821-tabs.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 15px 15px;
-  background-size: 28px 15px;
-}
-
 .taskbar .icons-left a {
   display: table-cell;
   border-bottom: 2px solid transparent;
