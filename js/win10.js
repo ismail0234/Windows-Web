@@ -42,7 +42,6 @@ var botBensonWindowsWeb = {
 
 		});
 
-
 	},
 	dragAndDropStart: function()
 	{
@@ -58,7 +57,7 @@ var botBensonWindowsWeb = {
 		  		if( botBensonWindowsWeb.nowDrag == null )
 		  			return;
 
-		  		var heightDesktopIcon = 90;
+		  		var heightDesktopIcon = 100;
 		  		var widthDesktopIcon  = 70;
 
 				var top  = ui.position.top - ( ui.position.top % heightDesktopIcon ); 
