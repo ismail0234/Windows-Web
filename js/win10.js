@@ -68,11 +68,11 @@ var botBensonWindowsWeb = {
 					top += heightDesktopIcon;
 
 				if( ui.position.left % widthDesktopIcon >= widthDesktopIcon / 2  )
-					top += widthDesktopIcon;
+					left += widthDesktopIcon;
 
 		  		botBensonWindowsWeb.nowDrag.css( { top : top + 'px' , left : left + 'px'} );
 		  		botBensonWindowsWeb.nowDrag = null;
-		  		
+
 		  	}		  	
 		});
 
