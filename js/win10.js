@@ -25,6 +25,11 @@ var botBensonWindowsWeb = {
 			"name"  : "Folder",
 			"image" : "images/desktop/folder.png"
 		},
+		"text-document" :
+		{
+			"name"  : "Text Document",
+			"image" : "images/desktop/text-document.png"
+		},		
 		"trash" : 
 		{
 			"name"  : "Trash",
