@@ -20,10 +20,10 @@ var botBensonWindowsWeb = {
 			"name"  : "Chrome",
 			"image" : "images/desktop/chrome.png"
 		},
-		"folder" :
+		"folder-empty" :
 		{
 			"name"  : "Folder",
-			"image" : "images/desktop/folder.png"
+			"image" : "images/desktop/folder-empty.png"
 		},
 		"computer" :
 		{
@@ -211,9 +211,9 @@ var botBensonWindowsWeb = {
 
 			}
 			break;
-			case "create-folder" : {
+			case "create-folder-empty" : {
 
-				botBensonWindowsWeb.createEntity( "folder" , coordinate  );
+				botBensonWindowsWeb.createEntity( "folder-empty" , coordinate  );
 
 			}
 			break;
