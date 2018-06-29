@@ -104,9 +104,9 @@ var botBensonWindowsWeb = {
 	/********************* TOOLS ****************************/
 	/**
 	 * Create Entity Desktop
-	 * @param  {string} entity     Const Entity Name
-	 * @param  {object} coordinate Entity Desktop Coordinate
-	 * @param  {String} entityName Entiy Name ( optional )
+	 * @param  {string} [entity]     [Const Entity Name]
+	 * @param  {object} [coordinate] [Entity Desktop Coordinate]
+	 * @param  {String} [entityName] [Entiy Name ( optional )]
 	 * @return {bool}
 	 */
 	createEntity: function( entity , coordinate , entityName = '' )
@@ -152,8 +152,8 @@ var botBensonWindowsWeb = {
 	},
 	/**
 	 * Entity Coordinate
-	 * @param  {int} entTop  Entity Top value
-	 * @param  {int} entLeft Entity Left value
+	 * @param  {int} [entTop] [Entity Top value]
+	 * @param  {int} [entLeft] [Entity Left value]
 	 * @return {object}      
 	 */
 	entityCoordinate: function( entTop , entLeft )
@@ -179,8 +179,8 @@ var botBensonWindowsWeb = {
 	},
 	/**
 	 * runContextEvent
-	 * @param  {string} dataType   Event Type 
-	 * @param  {Object} coordinate Event Type Coordinate ( optional )
+	 * @param  {string} [dataType]   [Event Type]
+	 * @param  {Object} [coordinate] [Event Type Coordinate ( optional )]
 	 * @return {void}
 	 */
 	runContextEvent: function( dataType , coordinate = {} )
