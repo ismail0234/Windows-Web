@@ -305,7 +305,12 @@ $(document).ready(function(){
     botBensonWindowsWeb.timeStart();
     botBensonWindowsWeb.changContextMenuStart();
     botBensonWindowsWeb.volumeStart();
-    botBensonWindowsWeb.dragAndDropStart();
+    botBensonWindowsWeb.dragAndDropChange( true );
+
+    botBensonWindowsWeb.createEntity( 'chrome' , { top: 0 , left: 0 } );
+    botBensonWindowsWeb.createEntity( 'folder' , { top: 100 , left: 0 } );
+    botBensonWindowsWeb.createEntity( 'visual-code' , { top: 200 , left: 0 } );
+    botBensonWindowsWeb.createEntity( 'trash' , { top: 300 , left: 0 } );
 
 });
 
