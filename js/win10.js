@@ -1,9 +1,41 @@
 
 var botBensonWindowsWeb = {
 
-	timer  : -1,
-	audio  : 1.0,
-	nowDrag: null,
+	timer    : -1,
+	audio    : 1.0,
+	nowDrag  : null,
+	draggable: false,
+	entityAutoIncreament: 0,
+	entity   : { 
+		"settings":
+		{
+
+			"height" : 100,
+			"width"  : 70
+
+		},
+
+		"chrome" : 
+		{
+			"name"  : "Chrome",
+			"image" : "images/desktop/chrome.png"
+		},
+		"folder" :
+		{
+			"name"  : "Folder",
+			"image" : "images/desktop/folder.png"
+		},
+		"trash" : 
+		{
+			"name"  : "Trash",
+			"image" : "images/desktop/trash.png"
+		},
+		"visual-code":
+		{
+			"name"  : "Visual Code",
+			"image" : "images/desktop/visual-code.png"
+		},
+	},
 
 	timeStart: function( )
 	{
