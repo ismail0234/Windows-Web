@@ -55,7 +55,6 @@ body {
 .taskbar .icons-left #search {
   height: 43px;
   width: 49px;
-  background-image: url("https://image.noelshack.com/fichiers/2018/18/6/1525514790-698627-icon-111-search-512.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 26px 26px;
@@ -64,7 +63,6 @@ body {
 .taskbar .icons-left #folder {
   height: 43px;
   width: 49px;
-  background-image: url("http://www.iconarchive.com/download/i98291/dakirby309/simply-styled/File-Explorer.ico");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 21px 21px;
@@ -74,7 +72,6 @@ body {
 .taskbar .icons-left #chrome {
   height: 43px;
   width: 49px;
-  background-image: url("https://cdn0.iconfinder.com/data/icons/jfk/512/chrome-512.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 26px 26px;
@@ -83,7 +80,6 @@ body {
 .taskbar .icons-left #tabs-windows {
   height: 43px;
   width: 49px;
-  background-image: url("https://image.noelshack.com/fichiers/2018/18/5/1525467821-tabs.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 15px 15px;
