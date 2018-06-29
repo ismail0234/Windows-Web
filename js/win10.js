@@ -75,10 +75,60 @@ var botBensonWindowsWeb = {
 		});
 
 	},
-	dragAndDropStart: function()
+	dragAndDropStart: function( type )
 	{
 
-		$( ".icon-desktop" ).draggable({
+		botBensonWindowsWeb.draggable = type == true ? true : false;
+
+	},
+	changContextMenuStart: function()
+	{
+
+		$(document).bind("contextmenu", function (event) {
+        
+	        event.preventDefault();      
+
+	        $( ".context-right-click-menu" ).removeClass('d-none').css({ "position" : "absolute" , "top" : event.pageY + "px" , "left" : event.pageX + "px" });
+
+	    });
+
+	    $( ".context-right-click-menu .context-row" ).click(function(){
+
+	    	botBensonWindowsWeb.runContextEvent( $(this).attr('data-type') , $( ".context-right-click-menu" ).position() );
+
+	    });
+
+	},
+
+
+	/********************* TOOLS ****************************/
+	/**
+	 * Create Entity Desktop
+	 * @param  {string} entity     Const Entity Name
+	 * @param  {object} coordinate Entity Desktop Coordinate
+	 * @param  {String} entityName Entiy Name ( optional )
+	 * @return {bool}
+	 */
+	createEntity: function( entity , coordinate , entityName = '' )
+	{
+
+		if( typeof botBensonWindowsWeb.entity[ entity ] == "undefined" || entity == "settings" )
+		{
+			alert("Object could not be created");
+			return true;
+		}
+		
+		var coor   = botBensonWindowsWeb.entityCoordinate( coordinate.top , coordinate.left );
+		var entity = botBensonWindowsWeb.entity[ entity ];
+		var name   = entityName == "" ? entity.name : entityName;
+
+		var html = '<div class="icon-desktop icon-desktop-orta" style="top:' + coor.top + 'px;left:' + coor.left + 'px" data-id="'+botBensonWindowsWeb.entityAutoIncreament+'"><a href="#">';
+		html += '<img src="' + entity.image +'">';
+		html += '<span>' + name +'</span></a></div>';
+
+		$(".icons-dekstop").append( html );
+
+		$( ".icon-desktop[data-id='"+botBensonWindowsWeb.entityAutoIncreament+"']" ).draggable({
 			start: function( event , ui ){
 
 				botBensonWindowsWeb.nowDrag = $(this);
