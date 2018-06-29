@@ -10,7 +10,7 @@ var botBensonWindowsWeb = {
 		"settings":
 		{
 
-			"height" : 100,
+			"height" : 90,
 			"width"  : 70
 
 		},
@@ -131,8 +131,11 @@ var botBensonWindowsWeb = {
 		var coor   = botBensonWindowsWeb.entityCoordinate( coordinate.top , coordinate.left );
 		var entity = botBensonWindowsWeb.entity[ entity ];
 		var name   = entityName == "" ? entity.name : entityName;
+		var height = botBensonWindowsWeb.entity.settings.height;
+		var width  = botBensonWindowsWeb.entity.settings.width;
 
-		var html = '<div class="icon-desktop icon-desktop-orta" style="top:' + coor.top + 'px;left:' + coor.left + 'px" data-id="'+botBensonWindowsWeb.entityAutoIncreament+'"><a href="#">';
+
+		var html = '<div class="icon-desktop" style="height:' + height + 'px;width:' + width + 'px; top:' + coor.top + 'px;left:' + coor.left + 'px" data-id="'+botBensonWindowsWeb.entityAutoIncreament+'"><a href="#">';
 		html += '<img src="' + entity.image +'">';
 		html += '<span>' + name +'</span></a></div>';
 
@@ -188,7 +191,7 @@ var botBensonWindowsWeb = {
 			left += widthDesktopIcon;
 
 		return {
-			top : top,
+			top : top ,
 			left: left,
 		};
 
