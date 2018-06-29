@@ -1013,15 +1013,18 @@ body {
     height: auto;
     min-width: 222px;
     width: auto;
+    padding: 5px 2.5px 5px 2.5px;
     
 }
-.context-right-click-menu a{
+.context-right-click-menu .context-row{
     font-size:12px;
+    padding: 3px 0px 3px 0px;
     color:black;
+    cursor:pointer;
 }
 .context-row{
     padding: 0;
-    margin: 5px 5px 5px 5px;
+    margin: 0 5px 0 5px;
 }
 .context-right-click-menu .col-md-12:hover{
     background:#d9d9d9;
