@@ -200,19 +200,22 @@ var botBensonWindowsWeb = {
 
 				window.location.reload();
 
-			},
+			}
+			break;
 			case "create-folder":
 			{
 
 				botBensonWindowsWeb.createEntity( "folder" , coordinate  );
 
-			},
+			}
+			break;
 			case "create-text-document":
 			{
 
 				botBensonWindowsWeb.createEntity( "text-document" , coordinate  );
 
-			},
+			}
+			break;
 
 		}
 
