@@ -25,6 +25,11 @@ var botBensonWindowsWeb = {
 			"name"  : "Folder",
 			"image" : "images/desktop/folder.png"
 		},
+		"computer" :
+		{
+			"name"  : "My Computer",
+			"image" : "images/desktop/my-computer.png"
+		},
 		"text-document" :
 		{
 			"name"  : "Text Document",
@@ -209,6 +214,12 @@ var botBensonWindowsWeb = {
 			case "create-folder" : {
 
 				botBensonWindowsWeb.createEntity( "folder" , coordinate  );
+
+			}
+			break;
+			case "create-computer" : {
+
+				botBensonWindowsWeb.createEntity( "computer" , coordinate  );
 
 			}
 			break;

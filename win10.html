@@ -253,6 +253,16 @@
             </div>
             
         </div>
+
+        <div class="col-md-12">
+
+            <div class="context-row" data-type="create-computer">
+                <div class="context-icon float-left"><i class="fas fa-file-alt"></i></div> 
+                <div class="context-text float-left">Create My Computer</div>
+                <div class="clearfix"></div>
+            </div>
+            
+        </div>
         
         <div class="col-md-12">
 
@@ -327,10 +337,11 @@ $(document).ready(function(){
     botBensonWindowsWeb.volumeStart();
     botBensonWindowsWeb.dragAndDropChange( true );
 
-    botBensonWindowsWeb.createEntity( 'chrome' , { top: 0 , left: 0 } );
-    botBensonWindowsWeb.createEntity( 'folder' , { top: 100 , left: 0 } );
-    botBensonWindowsWeb.createEntity( 'visual-code' , { top: 200 , left: 0 } );
-    botBensonWindowsWeb.createEntity( 'trash' , { top: 300 , left: 0 } );
+    botBensonWindowsWeb.createEntity( 'computer' , { top: 0 , left: 0 } );
+    botBensonWindowsWeb.createEntity( 'chrome' , { top: 100 , left: 0 } );
+    botBensonWindowsWeb.createEntity( 'folder' , { top: 200 , left: 0 } );
+    botBensonWindowsWeb.createEntity( 'visual-code' , { top: 300 , left: 0 } );
+    botBensonWindowsWeb.createEntity( 'trash' , { top: 400 , left: 0 } );
 
 });
 
