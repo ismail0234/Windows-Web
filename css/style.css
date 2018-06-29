@@ -129,7 +129,7 @@ body {
 .taskbar .icons-right #wifi {
   height: 43px;
   width: 49px;
-  background-image: url("https://image.noelshack.com/fichiers/2018/18/4/1525383811-wifinotificationicon.png");
+  background-image: url("../images/desktop/wifi-fuel.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 16px;
