@@ -35,6 +35,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" >
+
   <meta charset="utf-8">
 </head>
 <body>
@@ -350,7 +351,9 @@
 
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/win10.js"></script>
+
 <script type="text/javascript">
   
 $(document).ready(function(){
