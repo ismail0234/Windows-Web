@@ -35,10 +35,10 @@ var botBensonWindowsWeb = {
 			"name"  : "Text Document",
 			"image" : "images/desktop/text-document.png"
 		},		
-		"trash" : 
+		"trash-empty" : 
 		{
 			"name"  : "Trash",
-			"image" : "images/desktop/trash.png"
+			"image" : "images/desktop/trash-empty.png"
 		},
 		"visual-code":
 		{
