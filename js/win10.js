@@ -128,6 +128,12 @@ var botBensonWindowsWeb = {
 
 		$(".icons-dekstop").append( html );
 
+		if( !botBensonWindowsWeb.draggable )
+		{
+			botBensonWindowsWeb.entityAutoIncreament++;
+			return false;
+		}
+
 		$( ".icon-desktop[data-id='"+botBensonWindowsWeb.entityAutoIncreament+"']" ).draggable({
 			start: function( event , ui ){
 
