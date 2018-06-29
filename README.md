@@ -24,3 +24,12 @@ botBensonWindowsWeb.volumeStart();
 
 ```
 
+#### Files and Folders Drag And Drop Start
+
+```php
+
+botBensonWindowsWeb.dragAndDropStart();
+
+```
+
+    
