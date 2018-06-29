@@ -200,27 +200,38 @@ var botBensonWindowsWeb = {
 		switch( dataType )
 		{
 
-			case "refresh":
-			{
+			case "refresh" : {
 
 				window.location.reload();
 
 			}
 			break;
-			case "create-folder":
-			{
+			case "create-folder" : {
 
 				botBensonWindowsWeb.createEntity( "folder" , coordinate  );
 
 			}
 			break;
-			case "create-text-document":
-			{
+			case "create-text-document" : {
 
 				botBensonWindowsWeb.createEntity( "text-document" , coordinate  );
 
 			}
 			break;
+			case "create-visual-code" : {
+
+				botBensonWindowsWeb.createEntity( "visual-code" , coordinate  );
+
+			}
+			break;
+			case "create-chrome" : {
+
+				botBensonWindowsWeb.createEntity( "chrome" , coordinate  );
+
+			}
+			break;
+
+
 
 		}
 
