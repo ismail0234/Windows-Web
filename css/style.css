@@ -1027,6 +1027,7 @@ body {
 
 #window-popup
 {
+    display: none;
     position: absolute;
     top:100px;
     left: 250px;
