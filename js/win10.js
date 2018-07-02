@@ -44,7 +44,7 @@ var botBensonWindowsWeb = {
 		{
 			"name"  : "Visual Code",
 			"image" : "images/desktop/visual-code.png"
-		},
+		},	
 	},
 
 	timeStart: function( )
@@ -104,7 +104,7 @@ var botBensonWindowsWeb = {
 
 	    $( ".context-right-click-menu .context-row" ).click(function(){
 
-	    	botBensonWindowsWeb.runContextEvent( $(this).attr('data-type') , $( ".context-right-click-menu" ).position() );
+	    	botBensonWindowsWeb.runContextEvent( $(this).attr('data-type') , $(this).attr('data-popup') , $( ".context-right-click-menu" ).position() );
 	    	$( ".context-right-click-menu" ).addClass( 'd-none' );
 	    });
 
@@ -197,55 +197,82 @@ var botBensonWindowsWeb = {
 
 	},
 	/**
+	 * createPopup
+	 * @param  {string} entName [Popup Ent Name]
+	 * @return {void}
+	 */
+	createPopup: function( entName )
+	{
+
+
+	},
+	/**
 	 * runContextEvent
 	 * @param  {string} [dataType]   [Event Type]
 	 * @param  {Object} [coordinate] [Event Type Coordinate ( optional )]
 	 * @return {void}
 	 */
-	runContextEvent: function( dataType , coordinate = {} )
+	runContextEvent: function( dataType , dataPopup , coordinate = {} )
 	{
 
-		switch( dataType )
+		if( dataType != "undefined" )
 		{
 
-			case "refresh" : {
+			switch( dataType )
+			{
+				case "refresh" : {
 
-				window.location.reload();
+					window.location.reload();
+
+				}
+				break;
+				case "create-folder-empty" : {
+
+					botBensonWindowsWeb.createEntity( "folder-empty" , coordinate  );
+
+				}
+				break;
+				case "create-computer" : {
+
+					botBensonWindowsWeb.createEntity( "computer" , coordinate  );
+
+				}
+				break;
+				case "create-text-document" : {
+
+					botBensonWindowsWeb.createEntity( "text-document" , coordinate  );
+
+				}
+				break;
+				case "create-visual-code" : {
+
+					botBensonWindowsWeb.createEntity( "visual-code" , coordinate  );
+
+				}
+				break;
+				case "create-chrome" : {
+
+					botBensonWindowsWeb.createEntity( "chrome" , coordinate  );
+
+				}
+				break;
+			}
+
+		}
+
+		if( dataPopup != "undefined" )
+		{
+
+			switch( dataPopup )
+			{
+
+				case "system-information" : {
+
+					botBensonWindowsWeb.createPopup( "system-information" );
+				}
+				break;
 
 			}
-			break;
-			case "create-folder-empty" : {
-
-				botBensonWindowsWeb.createEntity( "folder-empty" , coordinate  );
-
-			}
-			break;
-			case "create-computer" : {
-
-				botBensonWindowsWeb.createEntity( "computer" , coordinate  );
-
-			}
-			break;
-			case "create-text-document" : {
-
-				botBensonWindowsWeb.createEntity( "text-document" , coordinate  );
-
-			}
-			break;
-			case "create-visual-code" : {
-
-				botBensonWindowsWeb.createEntity( "visual-code" , coordinate  );
-
-			}
-			break;
-			case "create-chrome" : {
-
-				botBensonWindowsWeb.createEntity( "chrome" , coordinate  );
-
-			}
-			break;
-
-
 
 		}
 
