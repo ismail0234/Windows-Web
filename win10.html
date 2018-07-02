@@ -2,13 +2,70 @@
 <html>
 <head>
   <title></title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" >
+  
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" >
+    
+   <style type="text/css">
 
-  <meta charset="utf-8">
+        body{
+            overflow: hidden;
+        }
+        .startup-screen{
+
+            position: absolute;
+            width:100%;
+            height:100%;
+            background: black;
+            top: 0;
+            left: 0;
+            z-index: 99999;
+        }
+        .startup-screen .windows-logo , .startup-screen .windows-loading{
+            text-align: center;
+        }
+        .startup-screen .windows-logo img{
+            height: 150px;
+            margin-top:245px;
+        }
+        .startup-screen .windows-loading img{
+            height: 48px;
+            margin-top:125px;
+        }
+       
+    </style>
+
+    <script type="text/javascript">
+        
+        window.onload = function(e){ 
+            console.log("loaded window"); 
+
+        }
+
+    </script>
+
 </head>
 <body>
+
+
+
+<div class="startup-screen">
+    
+    <div class="windows-logo">
+        
+        <img src="images/startup-screen.png">
+        
+    </div>
+
+    <div class="windows-loading">
+        
+        <img src="images/windows-loading.gif">
+        
+    </div>
+
+</div>
 
 <!-- Taskbar -->
 <div class="taskbar">
@@ -321,6 +378,8 @@
 
 </div>
 
+
+
 <div id="window-popup">
     
     <div class="row">
@@ -379,7 +438,6 @@
 </div>
 
 </body>
-
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/win10.js"></script>
