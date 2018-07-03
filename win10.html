@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" >
     
-   <style type="text/css">
+    <style type="text/css">
 
         body{
             overflow: hidden;
@@ -39,19 +39,20 @@
 
     <script type="text/javascript">
         
-        window.onload = function(e){ 
-            console.log("loaded window"); 
+        window.onload = function(e)
+        {
+            
+            document.getElementById('startup-screen').style.display = 'none';
 
         }
-
+        
     </script>
-
 </head>
 <body>
 
 
 
-<div class="startup-screen">
+<div class="startup-screen" id="startup-screen">
     
     <div class="windows-logo">
         
@@ -443,7 +444,7 @@
 <script type="text/javascript" src="js/win10.js"></script>
 
 <script type="text/javascript">
-  
+
 $(document).ready(function(){
 
     botBensonWindowsWeb.timeStart();
