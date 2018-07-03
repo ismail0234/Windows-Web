@@ -5,6 +5,38 @@ var botBensonWindowsWeb = {
 	audio    : 1.0,
 	nowDrag  : null,
 	draggable: false,
+	computer : {
+
+		cpu : {
+
+			"modelName" : "I7-8700 K",
+			"ghz" 		: 3700,
+			"turbo"		: 4700,
+
+		},
+		gpu : {
+
+			"modelName" : "GTX-1060 T",
+			"bit" 		: 256,
+			"ghz"		: 4096,
+			
+		},
+	    ram : {
+	        
+	        "modelName": "HYPER-X",
+	        "size"     : 16777216,
+	        "mhz"      : 2400,
+
+	    },
+	    disk : {
+	        
+	        "modelName": "SAMSUNG SSD",
+	        "size"     : 134217728,
+	        "rpm"      : 24000,
+
+	    }
+
+	},
 	entityAutoIncreament: 0,
 	entity   : { 
 		"settings":
@@ -14,7 +46,6 @@ var botBensonWindowsWeb = {
 			"width"  : 70
 
 		},
-
 		"chrome" : 
 		{
 			"name"  : "Chrome",
@@ -112,6 +143,12 @@ var botBensonWindowsWeb = {
 
 
 	/********************* TOOLS ****************************/
+    diskProcessSpeedPerSecond: function()
+    {
+        
+        return botBensonWindowsWeb.computer.disk.rpm / 1.11125;
+
+    },	
 	/**
 	 * Create Entity Desktop
 	 * @param  {string} [entity]     [Const Entity Name]
